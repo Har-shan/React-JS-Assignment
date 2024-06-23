@@ -20,11 +20,11 @@ body {
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  text-align: center;
 }
 
 /* Styling the header */
 .App-header {
-  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -33,10 +33,34 @@ h1 {
   font-size: 2rem;
 }
 
+/* Styling the button group */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #4CAF50;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
 /* Styling the form */
 form {
   display: flex;
   flex-direction: column;
+  align-items:center;
 }
 
 form > div {
@@ -52,18 +76,14 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="number"],
-select,
-textarea {
+input[type="checkbox"],
+textarea,
+select {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
-}
-
-textarea {
-  resize: vertical;
-  height: 100px;
 }
 
 button[type="submit"] {
@@ -86,6 +106,11 @@ p {
   color: red;
   font-size: 0.875rem;
   margin-top: 0.5rem;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 600px) {
